@@ -1,0 +1,33 @@
+@import "@fontsource-variable/outfit";
+@import "@fontsource-variable/inter";
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-heading: "Outfit Variable", sans-serif;
+  --font-sans: "Inter Variable", sans-serif;
+  --color-background: #f8fafc;
+  --color-foreground: #0f172a;
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
+  --color-primary: #0d9488;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #e2e8f0;
+  --color-secondary-foreground: #0f172a;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #475569;
+  --color-accent: #ccfbf1;
+  --color-accent-foreground: #064e3b;
+  --color-border: #e2e8f0;
+  --color-input: #cbd5e1;
+  --color-ring: #0d9488;
+  --color-destructive: #dc2626;
+  --radius-sm: .375rem;
+  --radius-md: .5rem;
+  --radius-lg: .75rem;
+  --radius-xl: 1rem;
+}
+@layer base{*{box-sizing:border-box;border-color:var(--color-border)}html{font-family:var(--font-sans);scroll-behavior:smooth}body{margin:0;background:var(--color-background);color:var(--color-foreground);-webkit-font-smoothing:antialiased}.font-heading{font-family:var(--font-heading)}}
+@keyframes float-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse-soft{0%,100%{box-shadow:0 0 0 0 rgb(13 148 136/.18)}50%{box-shadow:0 0 0 10px rgb(13 148 136/0)}}
+.animate-float-in{animation:float-in .6s ease-out both}.animate-pulse-soft{animation:pulse-soft 2.4s ease-in-out infinite}
