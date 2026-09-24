@@ -1,0 +1,1 @@
+import type{HTMLAttributes}from"react";import{cn}from"./utils";export function Card({className,...p}:HTMLAttributes<HTMLDivElement>){return <div className={cn("rounded-lg border bg-card text-card-foreground",className)} {...p}/>}export function CardContent({className,...p}:HTMLAttributes<HTMLDivElement>){return <div className={cn(className)} {...p}/>} 
